@@ -1,7 +1,5 @@
 +++
 template = "mardi.html"
-title = "My Travels"
+title = "Mard Trek"
 date = 2024-06-12
 +++
-
-My Travels
