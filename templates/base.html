@@ -73,8 +73,50 @@
   </header><!-- End Header -->
 
   <main id="main">
+    <div class="row">
+      <div class="col-md-9">
+        {% block content %}{% endblock %}
 
-    {% block content %}{% endblock %}
+      </div>
+      <div class="col-md-3">
+        <!-- ======= Sidebar ======= -->
+        <div class="aside-block">
+
+          <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-popular-tab" data-bs-toggle="pill" data-bs-target="#pills-popular" type="button" role="tab" aria-controls="pills-popular" aria-selected="true">Explore other treks</button>
+            </li>
+            
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+
+            <!-- Popular -->
+            <div class="tab-pane fade show active" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
+              <div class="post-entry-1 border-bottom">
+                <div class="post-meta"><span class="date">Sport</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                <h2 class="mb-2"><a href="{{ get_url(path="/blog/langtang") }}"">Langtang Trek</a></h2>
+                <span class="author mb-3 d-block">Rahul Nagarkoti</span>
+              </div>
+
+              <div class="post-entry-1 border-bottom">
+                <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                <h2 class="mb-2"><a href="{{ get_url(path="/blog/mardi") }}"">Mardi Trek</a></h2>
+                <span class="author mb-3 d-block">Rahul Nagarkoti</span>
+              </div>
+
+              <div class="post-entry-1 border-bottom">
+                <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                <h2 class="mb-2"><a href="{{ get_url(path="/blog/mustang") }}"">Upper Mustang Trek</a></h2>
+                <span class="author mb-3 d-block">Swapneel Malla</span>
+              </div>
+            </div> <!-- End Popular -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 
 
 </main><!-- End #main -->
